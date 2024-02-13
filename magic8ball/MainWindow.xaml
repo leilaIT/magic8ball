@@ -1,0 +1,19 @@
+﻿<Window x:Name="Magic_8_Ball" x:Class="magic8ball.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:magic8ball"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFE7E9FF">
+        <Ellipse x:Name="ellipse" HorizontalAlignment="Left" Height="390" Stroke="Black" VerticalAlignment="Center" Width="438" Margin="325,0,0,0" Fill="#FF121322"/>
+        <Label HorizontalAlignment="Left" Margin="440,0,0,0" VerticalAlignment="Center" Background="#FF6AFFEF" Width="208" Height="123">
+            <Label x:Name="lblBall" Content="         " FontSize="20" VerticalAlignment="Top" Background="#FF6AFFEF" RenderTransformOrigin="0.539,0.524" HorizontalAlignment="Left"/>
+        </Label>
+        <Button x:Name="btn" Content="Click to shake the 8ball!" HorizontalAlignment="Left" Margin="42,316,0,0" VerticalAlignment="Top" Height="59" Width="236" Click="Button_Click" Background="#FF9449F3" FontSize="18" FontWeight="Bold" BorderThickness="5,5,5,6" BorderBrush="#FF121322"/>
+        <Image x:Name="pic" HorizontalAlignment="Left" Height="170" Margin="94,125,0,0" VerticalAlignment="Top" Width="132" Source="/png-clipart-kuromi-thumbnail-removebg-preview.png"/>
+        <Label x:Name="lblName" Content="Magic 8 Ball" HorizontalAlignment="Left" Margin="22,33,0,0" VerticalAlignment="Top" FontSize="50" FontWeight="Bold" Foreground="#FF352856" Background="#FFC8A8D9"/>
+
+    </Grid>
+</Window>
